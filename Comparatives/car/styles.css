@@ -1,0 +1,83 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-image: url(ima/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#gatocarro {
+    width: 11vw;
+}
+
+#p1 {
+    position: relative;
+    margin-top: 10%;
+    margin-left: 90vw
+}
+
+
+.word {
+    position: absolute;
+}
+
+
+.modal-content {
+    background-color: rgb(205, 247, 246);
+}
+
+
+#p2 {
+    margin-top: 13%;
+    margin-left: 90vw
+}
+
+#p3 {
+    margin-top: 13%;
+    margin-left: 90vw
+}
+
+#cube {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* Añade el puntero de clic */
+}
+
+#cube1 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* Añade el puntero de clic */
+}
+
+#cube2 {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* Añade el puntero de clic */
+}
+
+.move {
+    animation: moveCube 5s linear forwards;
+}
+
+/* Animación para mover el cubo de izquierda a derecha */
+@keyframes moveCube {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+        transform: translate(-100%, -50%);
+    }
+}

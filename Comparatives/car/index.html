@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nivel 3</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Maria is ___________ than Sara</h1>
+    <div id="p1">
+        <h3 class="word" style="margin-top: 15vh;">taller</h3> <img class="letter" src="ima/letter.png" alt="letrero"
+            style="margin-top: 10vh; margin-left: -3vh;">
+    </div>
+    <div id="p2">
+        <h3 class="word" style="margin-top: -18vh;">more tall</h3> <img class="letter" src="ima/letter.png"
+            alt="letrero" style="margin-top: -30vh; margin-left: -3vh;">
+    </div>
+    <div id="p3">
+        <h3 class="word" style="margin-top: -25vh;">more taller</h3> <img class="letter" src="ima/letter.png"
+            alt="letrero" style="margin-top: -40vh; margin-left: -3vh;">
+    </div>
+    <div class="container-fluid mt-5">
+        <!-- El cubo que se desplazará -->
+        <div id="cube"><img id="gatocarro" src="ima/Designer-removebg-preview.png" alt="gatito sobre carro"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡El cubo ha llegado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El cubo ha llegado al otro extremo de la pantalla.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="nextLevelBtn">Avanzar al siguiente nivel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <!-- El cubo que se desplazará -->
+        <div id="cube1"><img id="gatocarro" src="ima/Designer-removebg-preview.png" alt="carro"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="endModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡El cubo ha llegado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El cubo es incorrecto
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <!-- El cubo que se desplazará -->
+        <div id="cube2"><img id="gatocarro" src="ima/Designer-removebg-preview.png" alt="carro"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="endModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¡El cubo ha llegado!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El cubo es incorrecto
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

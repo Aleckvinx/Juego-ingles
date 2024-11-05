@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Globos</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game-container">
+        <h2 id="nombre">Joan is _____ than Maria</h2>
+        <p id="nombre" style="margin-top: 5vh;">Tiempo restante: <span id="tiempo">10</span> segundos</p>
+
+        <script>
+            // Temporizador de 10 segundos
+            let tiempoRestante = 10;
+            const tiempoElemento = document.getElementById("tiempo");
+
+            const temporizador = setInterval(() => {
+                tiempoRestante--;
+                tiempoElemento.textContent = tiempoRestante;
+
+                if (tiempoRestante <= 0) {
+                    clearInterval(temporizador);
+                    tiempoElemento.textContent = "¡Tiempo terminado!";
+                    // Acción a realizar al finalizar el temporizador
+                }
+            }, 1000);
+        </script>
+
+        <div id="game-over" class="hidden">
+            <h1>¡Has perdido!</h1>
+            <button id="restart-btn">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Modal para respuesta correcta -->
+    <div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="endModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="endModalLabel">¡Correct balloon!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">You chose the correct answer</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="nextLevelBtn">Avanzar al siguiente
+                        nivel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
